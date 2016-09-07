@@ -1,15 +1,11 @@
-//create function
-function checkInput(input) {
-//control and return statements
-	return (input == 'Hello');
+function checkInput( input ) {
+	if (input.toLowerCase() === 'hello') {
+		return 'Hello World!';
+	} else {
+		return 'Incorrect Input :(';
+	}
 }
 
-//Prompt user for input and store variable
-var userInput = prompt("Say 'Hello' to me!");
-//Call function
-while ( !checkInput(userInput) ) {
-	alert('Sorry, that is the wrong word :(');
-	userInput = prompt("Say 'Hello' to me!");
-}
-//Alert user results
-alert('Hello, World!');
+var userInput = prompt('Say "Hello" to Me!');
+
+alert( checkInput(userInput) );
