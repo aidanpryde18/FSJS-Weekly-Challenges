@@ -17,8 +17,10 @@ var Box = {
     }
 }
 //Create 2 buttons for Height. The first button decreases the Box Height by 1. The second button increases the Box Height by 1.
+//Extra credit
+//Create interactive buttons to decrease or increase the Width and Volume
 $('#HeightDecrease').click(function () {
-    if(Box.height > 0) {
+    if(Box.height > 1) {
         Box.height--;
         updateOutput();
     }
@@ -28,7 +30,7 @@ $('#HeightIncrease').click(function () {
     updateOutput();
 });
 $('#WidthDecrease').click(function () {
-    if(Box.width > 0) {
+    if(Box.width > 1) {
         Box.width--;
         updateOutput();
     }
@@ -41,5 +43,3 @@ $('#WidthIncrease').click(function () {
 $('#Print').click(function () {
     updateOutput()
 });
-//Extra credit
-//Create interactive buttons to decrease or increase the Width and Volume
