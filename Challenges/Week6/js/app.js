@@ -15,7 +15,21 @@ var Box = {
         var volume = this.height * this.width;
         return volume;
     }
-}
+};
+
+var Box2 = function(){
+    var volume = 0;
+
+    this.height =  3;
+/*    width: 3,
+    volume: function () {
+        var volume = this.height * this.width;
+        return volume;
+    }*/
+};
+
+var MyBox2 = new Box2();
+
 //Create 2 buttons for Height. The first button decreases the Box Height by 1. The second button increases the Box Height by 1.
 //Extra credit
 //Create interactive buttons to decrease or increase the Width and Volume
